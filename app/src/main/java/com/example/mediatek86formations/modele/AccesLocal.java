@@ -52,9 +52,8 @@ public class AccesLocal {
      * @param formation
      */
     public void  suppr(Formation formation){
-
         bd = accesBD.getWritableDatabase();
-         bd.delete("formation", "id=?", new String[]{String.valueOf(formation.getId())});
+        bd.delete("formation", "id=?", new String[]{String.valueOf(formation.getId())});
         bd.close();
     }
 

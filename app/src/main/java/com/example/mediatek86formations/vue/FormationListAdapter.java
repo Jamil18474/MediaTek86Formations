@@ -136,6 +136,7 @@ public class FormationListAdapter extends BaseAdapter {
         int indice = (int)v.getTag();
         lesFavoris.add(lesFormations.get(indice));
         controle.creerFormation(lesFormations.get(indice));
+
     }
 
     /**

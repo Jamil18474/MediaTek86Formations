@@ -52,9 +52,9 @@ public class FavorisActivity extends AppCompatActivity{
         ArrayList<Formation> lesFavoris = controle.getLesFavoris();
         if(lesFavoris != null) {
             Collections.sort(lesFavoris, Collections.<Formation>reverseOrder());
-                        ListView listView = (ListView) findViewById(R.id.lstFormations);
-                        FavoriListAdapter adapter = new FavoriListAdapter(lesFavoris, FavorisActivity.this);
-                        listView.setAdapter(adapter);
+            ListView listView = (ListView) findViewById(R.id.lstFormations);
+            FavoriListAdapter adapter = new FavoriListAdapter(lesFavoris, FavorisActivity.this);
+            listView.setAdapter(adapter);
         }
     }
 }

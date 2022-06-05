@@ -27,7 +27,6 @@ public class MainActivityTest {
         onView(withId(R.id.btnFormations)).perform(click());
         onView(withId(R.id.txtFiltre)).perform(typeText("doc"), closeSoftKeyboard());
         onView(withId(R.id.btnFiltrer)).perform(click());
-        onView(withId(R.id.txtFiltre)).perform(typeText(""), closeSoftKeyboard());
         onView(withId(R.id.btnFiltrer)).perform(click());
         onData(anything()).inAdapterView(withId(R.id.lstFormations)).atPosition(0).onChildView(withId(R.id.txtListTitle)).perform(click());
         onView(isRoot()).perform(ViewActions.pressBack());

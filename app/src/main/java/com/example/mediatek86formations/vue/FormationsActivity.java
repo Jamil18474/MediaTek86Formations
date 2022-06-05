@@ -72,7 +72,7 @@ public class FormationsActivity extends AppCompatActivity {
                 creerListe(controle.getLesFormations());
             } else {
                 creerListe(controle.getLesFormationFiltre(filtre));
-                    txtFiltre.setText("");
+                txtFiltre.setText("");
             }
         });
     }
